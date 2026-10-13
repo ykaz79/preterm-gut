@@ -1,6 +1,6 @@
 # Analysis code
 
-Analysis code for *"Klebsiella-dominant gut community state precedes intestinal complications in preterm infants: an exploratory two-site longitudinal cohort study."*
+Analysis code for *"Longitudinal Transitions of Gut Microbial Community Types in Preterm Infants Receiving Probiotics: An Exploratory Two-Site Cohort Study."*
 
 All analyses reported in the manuscript were performed with these scripts.
 
