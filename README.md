@@ -69,6 +69,7 @@ this order; later scripts depend on the pickles written by earlier ones.
 | `reproduce.py` | `d.pkl` | relative abundance, pre-onset group definition, Table 2 effect sizes |
 | `batch_models.py` | `d_final.pkl` | batch diagnostics, linear mixed models and generalised estimating equations with batch as a five-level variable, batch-stratified comparisons |
 | `perm_onset.py` | — | exact patient-level permutation tests reported in the manuscript, with onset-age censoring: whole cohort, Site B and batch-stratified schemes, all six taxa in Table 2, the time-matched comparisons in Supplementary Table S7 and the analysis without the earliest-onset infant |
+| `table_s8_models.py` | — | Supplementary Table S8: untransformed, logit- and log10-transformed linear mixed models, beta regression, two-part model and Hodges–Lehmann estimate on infant-level medians, with the Shapiro–Wilk test and skewness of the residuals (requires `d_final.pkl`) |
 | `perm.py`, `perm_all.py` | — | earlier permutation scheme without onset-age censoring; retained for reference, not used for reported P values |
 | `major6.py` | — | Site B linear mixed models and generalised estimating equations reported in the Results (its permutation section uses the earlier scheme) |
 
@@ -134,7 +135,7 @@ scheme without onset-age censoring and are kept for reference only.
 resampling infants with replacement (4,000 replicates), so that the within-infant
 correlation is preserved.
 
-**Reproducibility.** Random number use is limited to the bootstrap in
-`auc_table.py` (seed 20260726), the Monte Carlo contingency-table tests in
+**Reproducibility.** Random number use is limited to the bootstraps in
+`auc_table.py` and `table_s8_models.py` (seed 20260726), the Monte Carlo contingency-table tests in
 `xtab.py` (seed 0) and `pcoa_test.py` (seed 0), and point jitter in `fig4.py`
 (seed 7). All other results are deterministic.
