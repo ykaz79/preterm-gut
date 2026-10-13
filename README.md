@@ -83,6 +83,7 @@ this order; later scripts depend on the pickles written by earlier ones.
 | `site_pgct.py` | — | Supplementary Table S6: site x community type |
 | `xtab.py` | — | batch composition and its association with site (Supplementary Results) |
 | `siteB_recluster.py` | — | full workflow repeated within Site B |
+| `table_s2_biothree.py` | — | Supplementary Table S2: Bio-Three exposure within Site B, defined from the date of each sample relative to the formulary withdrawal on 10 July 2024 (date of birth + day of life); infant characteristics, sample-level community-type distribution with Benjamini–Hochberg values, and a Monte Carlo exact chi-squared test |
 | `circularity.py`, `auc_table.py` | `auc_tab.pkl` | Supplementary Table S9: discriminative performance, with cluster bootstrap confidence intervals |
 | `table1_ext.py` | — | additional Table 1 variables derived from the clinical workbook |
 
@@ -136,6 +137,6 @@ resampling infants with replacement (4,000 replicates), so that the within-infan
 correlation is preserved.
 
 **Reproducibility.** Random number use is limited to the bootstraps in
-`auc_table.py` and `table_s8_models.py` (seed 20260726), the Monte Carlo contingency-table tests in
+`auc_table.py` and `table_s8_models.py` and the Monte Carlo test in `table_s2_biothree.py` (seed 20260726), the Monte Carlo contingency-table tests in
 `xtab.py` (seed 0) and `pcoa_test.py` (seed 0), and point jitter in `fig4.py`
 (seed 7). All other results are deterministic.
